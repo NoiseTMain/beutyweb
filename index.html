@@ -156,7 +156,7 @@
             padding: 1rem 5%;
         }
 
-        .logo img { height: 40px; transition: var(--transition-slow); }
+        .logo img { height: 75px; transition: var(--transition-slow); }
         .logo.white-logo img { filter: invert(1); }
         nav.scrolled .logo.white-logo img { filter: none; }
 
@@ -207,18 +207,9 @@
             justify-content: center;
             text-align: center;
             position: relative;
-            background-image: url('https://i.postimg.cc/kG6tJ8t9/IMG-1609.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Parallax */
+            background-color: #F5E9DC;
             color: var(--color-white);
             padding: 0 5%;
-        }
-
-        .hero::before {
-            content: ''; position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(17, 17, 17, 0.4);
         }
 
         .hero-content {
@@ -661,18 +652,18 @@
 
     <footer>
         <div class="container">
-            &copy; 2026 Andrea Leitnerová – Lash & Brow Studio. Všechna práva vyhrazena. | Design by Premium Agency.
+            © 2026 Andrea Leitnerová – Lash & Brow Studio. Všechna práva vyhrazena. | Design by Premium Agency.
         </div>
     </footer>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-close">×</span>
         <img src="" alt="Fullscreen image" id="lightbox-img">
     </div>
 
     <div class="modal" id="reviewModal">
         <div class="modal-content">
-            <span class="modal-close" onclick="toggleModal('reviewModal')">&times;</span>
+            <span class="modal-close" onclick="toggleModal('reviewModal')">×</span>
             <h3 style="font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">Podělte se o zkušenost</h3>
             <form id="reviewForm">
                 <div class="form-group">
